@@ -1,0 +1,12 @@
+
+
+1. You may ask: how can in-memory storage be persistent?.
+2. The trick here is that you still keep everything in memory, but additionally you persist each operation on disk in a transaction log.
+   Look at the picture (given in this folder (starts with 3.2)):
+3. The first thing that you may notice is that even though your fast and nice in-memory database has got persistence now, queries don’t slow down.
+4. Because they still hit only the main memory like they did with just an in-memory database.
+5. But what about updates?
+6. Each update (or let’s name it a transaction) should not only be applied to memory but also persisted on disk. 
+7. A slow disk. Is it a problem?, Look at the picture (given in this folder (starts with 3.3));
+8. Transactions are applied to the transaction log in an append-only way.
+9. What is so good about that? When addressed in this append-only manner, disks are pretty fast.

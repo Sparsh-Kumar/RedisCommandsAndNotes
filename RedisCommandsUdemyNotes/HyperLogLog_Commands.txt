@@ -1,0 +1,21 @@
+HyperLogLog
+============================
+
+A HyperLogLog is a probabilistic data structure used to count unique values — or as it's referred to in mathematics: calculating the cardinality of a set. These values can be anything: for example, IP addresses for the visitors of a website, search terms, or email addresses
+
+
+pfadd hll a b c d e f g h
+
+pfadd hll r s t
+
+pfcount hll
+
+pfadd hll2 1 2 3 4 5 6
+
+pfcount hll2
+
+pfcount hll hll2
+
+pfmerge hllmerge hll hll2
+
+

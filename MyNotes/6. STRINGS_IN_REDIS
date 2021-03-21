@@ -1,0 +1,26 @@
+
+IMPORTANT_NOTES
+
+1. ALL THE DATA IN THE REDIS IS STORED AS A KEY VALUE PAIR
+2. REDIS-SERVER DEFAULT PORT IS 6379
+
+
+STRING_OPERATIONS_IN_REDIS
+
+1. set key_name value_of_key_name
+   This command will set the "key_name" as a key and "value_of_key_name" as a value of that "key_name"
+
+2. get key_name 
+   This command will give you the value of the "key_name" you set using "set key_name value_of_key_name" command.
+
+3. getrange key_name start_index end_index
+   This will give you the substring value of the value of "key_name" from start_index to end_index [start_index, end_index]
+
+4. mset key-1 value-1 key-2 value-2 .... key-n value-n
+   This command will help you to set multiple key value pairs at once
+
+5. mget key-1 key-2 ... key-n
+   This command will give you the values of key-1, key-2, ... key-n at once.
+
+6. strlen key_name
+   This command will help you to get the "length of the value of the 'key_name'" key

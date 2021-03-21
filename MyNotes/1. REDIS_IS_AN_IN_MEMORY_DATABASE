@@ -1,0 +1,8 @@
+https://medium.com/@denisanikin/what-an-in-memory-database-is-and-how-it-persists-data-efficiently-f43868cff4c1
+
+
+1. An in memory database is a database that keeps whole dataset in RAM.
+2. It means that each time you query a database or update data in a database, you only access the main memory.
+3. So, there’s no disk involved into these operations.
+4. And this is good, because the main memory is way faster than any disk.
+ 

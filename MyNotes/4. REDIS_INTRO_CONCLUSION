@@ -1,0 +1,4 @@
+
+
+1. In-memory databases don’t use disk for non-change operations.
+2. In-memory databases do use disk for data change operations, but they use it in the fastest possible way.

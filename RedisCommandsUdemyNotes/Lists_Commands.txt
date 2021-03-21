@@ -1,0 +1,43 @@
+Lists
+=====================================
+Flushall --> to remove all the key vlaue pairs
+
+lpush country India
+lpush country USA
+lrange country 0 -1
+lpush country France
+lrange country 0 1
+lrange country 0 -1
+llen country  --> Length of the array
+lpop country
+lrange country 0 -1
+rpop country 
+lrange country 0 -1
+lset country 1 France --> To replace the value at current posiiton
+lrange country 0 -1
+linsert country before France India
+lrange country 0 -1
+linsert country after USA UAE
+lrange country 0 -1
+lindex country 1  --> Get values based on the index
+lpushx movies Avengers  --> It wont add
+lrange movies 0 -1  --> NO data
+lpushx country Australia  --> will return the length of list
+lrnge country 0 -1
+rpushx movies "Iron man"
+rpoplpush country country1
+lrange country 0 -1
+lrnage country1 0 -1
+lpush coutry 'New Zealand" "South Africa"
+lrange country 0 -1
+blpop movies 10  -->  This will remove the element and block if not present
+lpush movies Avengers  --> from new Terminal
+brpop movies Endgame
+SORT country ALPHA   -->
+SORT lsit DESC  --> If Numeric
+
+
+
+
+
+

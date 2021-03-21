@@ -1,0 +1,17 @@
+
+
+# I can explicitly set out expiry for a key for example
+
+set a 4
+expire a number_of_seconds
+
+# In order to expire a key, a key must be created
+# we can also perform creation and expiration set up of a key at once
+# for example
+
+setex key_name number_of_seconds value_of_key
+[for example => setex b 10 anyvalue] - This will create a key named "b" having value "any value" and key "b" will expire after 10 seconds of creation
+
+# we can also find out how much time is remaining for a key to get expired using "ttl" command
+[for example => ttl key_name]
+This will return the number of seconds remaining after which the key will get deleted or expired.

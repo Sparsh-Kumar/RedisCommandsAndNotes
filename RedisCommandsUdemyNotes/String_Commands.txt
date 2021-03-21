@@ -1,0 +1,37 @@
+Strings
+===============================
+set name "Daily Code Buffer"
+get name
+getrange name 0 4
+getset name Shabbir
+get name
+set email email@domain.com
+mget name email
+mset lang English tech redis
+get lang
+get tech
+mget tech lang 
+strlen tech
+strlen lang  --> Will return 0 if key doesn't Exist
+set count 1
+get count
+incr count  --> will return new number
+decr count  --> Will retunr new count
+incrby count 10
+decrby count 5
+set pi 3.14
+get pi
+incrbyfloat pi 0.0001
+get name
+append name " Dawoodi"
+get name
+get a  --> Set any value first to A
+expire a 10
+ttl a
+setex session 10 1234
+ttl session
+ttl name  --> Default is expiration is not set, then it is -1
+
+
+
+

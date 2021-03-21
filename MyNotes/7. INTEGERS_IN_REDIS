@@ -1,0 +1,24 @@
+
+1. set key_name number_value [for example - set a 1]
+   The above command will set the key_name as a and it's value as 1.
+
+2. incr key_name
+   This will increment the value of the key_name by 1
+
+3. incrby key_name some_number
+   This will increment the value of key_name by some_number
+   i.e
+   after executing the above command the value of the key_name becomes
+   key_name_value + some_number
+
+4. decr key_name
+   This will decrement the value of the key_name by 1.
+
+5. decrby key_name some_number
+   This will decrement the value of key_name by some_number
+   i.e
+   after executing the above command the value of the key_name becomes
+   key_name_value - some_number
+
+4. get key_name
+   The command is used to get the value of the key_name.

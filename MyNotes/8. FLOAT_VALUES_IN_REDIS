@@ -1,0 +1,12 @@
+
+1. set key_name decimal_value [for example - set pi 3.14159265]
+   The above command will set the key_name as pi and it's value as 3.14159265.
+
+2. incrbyfloat key_name some_decimal_or_non_decimal_value
+   This will increment the value of key_name by some_number
+   i.e
+   after executing the above command the value of the key_name becomes
+   key_name_value + some_number
+
+3. get key_name
+   The command is used to get the value of the key_name.

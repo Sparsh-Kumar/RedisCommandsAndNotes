@@ -1,0 +1,19 @@
+
+
+
+set a 1 #success
+set pi 3.14159265 #success
+
+# case 1
+
+incr a #success
+incrbyfloat a 4.214 #success
+
+
+# case 2
+
+incrbyfloat pi 4.45 #success
+incr pi 4 # failure (throws error => (error) ERR wrong number of arguments for 'incr' command)
+
+IMPORTANT - (TO - ASK)
+# This may be because an integer can be assumed as a decimal number, but the decimal number cannot be assumed as a integer number

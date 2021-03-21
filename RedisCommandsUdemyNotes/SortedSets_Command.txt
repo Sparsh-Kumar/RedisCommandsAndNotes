@@ -1,0 +1,38 @@
+Sorted Sets:
+======================================
+
+zadd users 1 Shabbir 
+zadd users 2 Steve
+zrange users 0 -1
+zrange users 0 -1 withscores
+zcard users  --> to get the count/cardinality of the Sets
+zcount users -inf +inf   --> all data with all ranks
+zcount users 2 10
+zadd users 3 Alex
+zrange users 0 -1
+zrem users Alex
+zramge users 0 -1
+zrevrange users 0 -1
+zrank users Steve
+zrevrank users Steve
+zscore users Shabbir
+
+
+zadd users 3 Alex 4 Ryan 5 Nimah 6 Felix  -- > Adding more Data
+
+zrevrange users 0 -1 withscores
+
+zrevrangebyscore users 5 2 withscores
+
+zrange users 0 -1 withscores
+
+zincrby users 2 Felix
+
+zremrangebyscore users -inf 2
+
+zrange users 0 -1 withscores
+
+zremrangebyrank users 0 1
+
+zrange users 0 -1 withscores
+

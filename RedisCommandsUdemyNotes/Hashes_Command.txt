@@ -1,0 +1,25 @@
+Hashes
+======================================
+Last was HyperLogLog
+
+hset myhash name Shabbir 
+hget myhash name 
+hset myhash email email@domain.com
+hget myhash email
+hkeys myhash
+hvals myhash
+
+hgetall myhash
+
+hexists myhash name
+hexists myhash name1  --> will retuen 0 if not available
+hlen myhash
+hmset myhash age 25 country India
+hmget myhash name email
+
+hincrby myhash age 2
+hincrbyfloat myhash age 1.5
+hdel myhash country
+hstrlen myhash name
+hsetnx myhash country India  
+

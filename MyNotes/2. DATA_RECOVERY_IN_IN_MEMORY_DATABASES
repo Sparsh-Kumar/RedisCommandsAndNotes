@@ -1,0 +1,10 @@
+
+
+
+1. How would you recover your data after a machine with an in-memory database reboots or crashes. ?
+2. Well, with just an in-memory database, there’s no way out. A machine is down — the data is lost. Forget about it.
+3. Is it possible to combine the power of in-memory data storage and the durability of good old databases like MySQL or Postgres?.
+4. Sure! Would it affect the performance? Surprisingly, it won’t!
+
+
+5. Here come in-memory databases with persistence like Redis, Aerospike, Tarantool.
